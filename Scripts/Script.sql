@@ -1,0 +1,1 @@
+select * from asgard_dataplatform.t66_hep_item thi limit 10;
