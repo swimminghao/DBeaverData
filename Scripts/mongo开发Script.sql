@@ -1,0 +1,1 @@
+db.atlas_structured.find({"recognitionCode" : "3213335466uuggbeo8"});
