@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="检查项er图">
+	<entities>
+		<data-source id="mysql8-177cdf29977-785ce339cc5716c9">
+			<entity id="1" name="t66_hep_exam_term" fq-name="asgard_dataplatform.t66_hep_exam_term">
+				<path name="asgard_dataplatform"/>
+			</entity>
+			<entity id="2" name="t66_hep_item" fq-name="asgard_dataplatform.t66_hep_item">
+				<path name="asgard_dataplatform"/>
+			</entity>
+			<entity id="3" name="t66_hep_item_map_content" fq-name="asgard_dataplatform.t66_hep_item_map_content">
+				<path name="asgard_dataplatform"/>
+			</entity>
+			<entity id="4" name="t66_hep_item_map_term" fq-name="asgard_dataplatform.t66_hep_item_map_term">
+				<path name="asgard_dataplatform"/>
+			</entity>
+			<entity id="5" name="t66_hep_medical_content" fq-name="asgard_dataplatform.t66_hep_medical_content">
+				<path name="asgard_dataplatform"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations/>
+</diagram>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="firstERDemo">
+	<entities>
+		<data-source id="dbeaver-sample-database-sqlite-1">
+			<entity id="1" name="Album" fq-name="Album"/>
+			<entity id="2" name="Artist" fq-name="Artist"/>
+			<entity id="3" name="Customer" fq-name="Customer"/>
+			<entity id="4" name="Employee" fq-name="Employee"/>
+			<entity id="5" name="Genre" fq-name="Genre"/>
+			<entity id="6" name="Invoice" fq-name="Invoice"/>
+			<entity id="7" name="InvoiceLine" fq-name="InvoiceLine"/>
+			<entity id="8" name="MediaType" fq-name="MediaType"/>
+			<entity id="9" name="Playlist" fq-name="Playlist"/>
+			<entity id="10" name="PlaylistTrack" fq-name="PlaylistTrack"/>
+			<entity id="11" name="Track" fq-name="Track"/>
+			<entity id="12" name="foo" fq-name="foo"/>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="FK_Track_Album" fq-name="Track.FK_Track_Album" type="fk" pk-ref="1" fk-ref="11"/>
+		<relation name="FK_Album_Artist" fq-name="Album.FK_Album_Artist" type="fk" pk-ref="2" fk-ref="1"/>
+		<relation name="FK_Invoice_Customer" fq-name="Invoice.FK_Invoice_Customer" type="fk" pk-ref="3" fk-ref="6"/>
+		<relation name="FK_Customer_Employee" fq-name="Customer.FK_Customer_Employee" type="fk" pk-ref="4" fk-ref="3"/>
+		<relation name="FK_Employee_Employee" fq-name="Employee.FK_Employee_Employee" type="fk" pk-ref="4" fk-ref="4"/>
+		<relation name="FK_Track_Genre" fq-name="Track.FK_Track_Genre" type="fk" pk-ref="5" fk-ref="11"/>
+		<relation name="FK_InvoiceLine_Invoice" fq-name="InvoiceLine.FK_InvoiceLine_Invoice" type="fk" pk-ref="6" fk-ref="7"/>
+		<relation name="FK_Track_MediaType" fq-name="Track.FK_Track_MediaType" type="fk" pk-ref="8" fk-ref="11"/>
+		<relation name="FK_PlaylistTrack_Playlist" fq-name="PlaylistTrack.FK_PlaylistTrack_Playlist" type="fk" pk-ref="9" fk-ref="10"/>
+		<relation name="FK_InvoiceLine_Track" fq-name="InvoiceLine.FK_InvoiceLine_Track" type="fk" pk-ref="11" fk-ref="7"/>
+		<relation name="FK_PlaylistTrack_Track" fq-name="PlaylistTrack.FK_PlaylistTrack_Track" type="fk" pk-ref="11" fk-ref="10"/>
+	</relations>
+</diagram>
