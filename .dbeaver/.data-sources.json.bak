@@ -13,6 +13,138 @@
 				"url": "jdbc:sqlite:/Users/xh/Library/DBeaverData/workspace6/.metadata/sample-database-sqlite-1/Chinook.db",
 				"type": "dev"
 			}
+		},
+		"mysql8-177cdf29977-785ce339cc5716c9": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "开发环境",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "47.100.94.134",
+				"port": "3001",
+				"url": "jdbc:mysql://47.100.94.134:3001/",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"mysql8-177ce11dfd5-17b980b9f1215c1d": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "测试环境",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "114.55.249.3",
+				"port": "3001",
+				"url": "jdbc:mysql://114.55.249.3:3001/",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"mysql8-177ce1374cd-2fa70d045727b903": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "生产备库只读",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "47.96.135.57",
+				"port": "3001",
+				"url": "jdbc:mysql://47.96.135.57:3001/",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"mysql8-177ce1514bf-5b035bdaa13017c6": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "生产读写数据库",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "101.37.160.177",
+				"port": "3001",
+				"url": "jdbc:mysql://101.37.160.177:3001/",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"cql-177ce163304-571fb6729e41c130": {
+			"provider": "mongodb",
+			"driver": "cql",
+			"name": "mongo生产",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "s-bp10f01f3e5093c4-pub.mongodb.rds.aliyuncs.com",
+				"port": "3717",
+				"database": "atlas",
+				"url": "mongodb://s-bp10f01f3e5093c4-pub.mongodb.rds.aliyuncs.com:3717",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-mongo-cred-mechanism@": "NONE",
+					"@dbeaver-auth-source@": "szro",
+					"showAllDatabases": "true"
+				}
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"cql-177ce183a5a-4e10523185e47e4b": {
+			"provider": "mongodb",
+			"driver": "cql",
+			"name": "mongo开发",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "27017",
+				"database": "local",
+				"url": "mongodb://47.100.94.134:13001/atlas",
+				"type": "dev",
+				"properties": {
+					"singleNodeMode": "false",
+					"socketKeepAlive": "true"
+				},
+				"provider-properties": {
+					"@dbeaver-mongo-cred-mechanism@": "NONE",
+					"@dbeaver-auth-source@": "test",
+					"showAllDatabases": "true"
+				},
+				"bootstrap": {
+					"defaultCatalog": "local"
+				}
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"mysql8-177ddc8448f-627ba830275d0a75": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "127.0.0.1",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "127.0.0.1",
+				"port": "3306",
+				"url": "jdbc:mysql://127.0.0.1:3306/",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20000"
+				},
+				"auth-model": "native",
+				"handlers": {}
+			}
 		}
 	},
 	"connection-types": {

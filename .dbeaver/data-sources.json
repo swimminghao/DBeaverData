@@ -41,8 +41,7 @@
 				"port": "3001",
 				"url": "jdbc:mysql://114.55.249.3:3001/",
 				"type": "dev",
-				"auth-model": "native",
-				"handlers": {}
+				"auth-model": "native"
 			}
 		},
 		"mysql8-177ce1374cd-2fa70d045727b903": {
@@ -57,8 +56,7 @@
 				"port": "3001",
 				"url": "jdbc:mysql://47.96.135.57:3001/",
 				"type": "dev",
-				"auth-model": "native",
-				"handlers": {}
+				"auth-model": "native"
 			}
 		},
 		"mysql8-177ce1514bf-5b035bdaa13017c6": {
@@ -73,8 +71,7 @@
 				"port": "3001",
 				"url": "jdbc:mysql://101.37.160.177:3001/",
 				"type": "dev",
-				"auth-model": "native",
-				"handlers": {}
+				"auth-model": "native"
 			}
 		},
 		"cql-177ce163304-571fb6729e41c130": {
@@ -88,14 +85,13 @@
 				"host": "s-bp10f01f3e5093c4-pub.mongodb.rds.aliyuncs.com",
 				"port": "3717",
 				"database": "atlas",
-				"url": "mongodb://s-bp10f01f3e5093c4-pub.mongodb.rds.aliyuncs.com:3717/atlas",
+				"url": "mongodb://s-bp10f01f3e5093c4-pub.mongodb.rds.aliyuncs.com:3717",
 				"type": "dev",
 				"provider-properties": {
 					"@dbeaver-mongo-cred-mechanism@": "NONE",
-					"@dbeaver-auth-source@": "admin",
+					"@dbeaver-auth-source@": "szro",
 					"showAllDatabases": "true"
-				},
-				"handlers": {}
+				}
 			},
 			"custom-properties": {
 				"database.meta.separate.connection": "false"
@@ -107,22 +103,46 @@
 			"name": "mongo开发",
 			"save-password": true,
 			"show-system-objects": true,
-			"read-only": false,
+			"read-only": true,
 			"configuration": {
-				"host": "localhost",
-				"port": "27017",
-				"database": "local",
-				"url": "mongodb://47.100.94.134:13001/atlas",
+				"host": "47.100.94.134",
+				"port": "13001",
+				"database": "atlas",
 				"type": "dev",
+				"properties": {
+					"singleNodeMode": "false",
+					"socketKeepAlive": "true"
+				},
 				"provider-properties": {
 					"@dbeaver-mongo-cred-mechanism@": "NONE",
-					"@dbeaver-auth-source@": "admin",
+					"@dbeaver-auth-source@": "test",
 					"showAllDatabases": "true"
 				},
-				"handlers": {}
+				"handlers": {},
+				"bootstrap": {
+					"defaultCatalog": "local"
+				}
 			},
 			"custom-properties": {
 				"database.meta.separate.connection": "false"
+			}
+		},
+		"mysql8-177ddc8448f-627ba830275d0a75": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "127.0.0.1",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "127.0.0.1",
+				"port": "3306",
+				"url": "jdbc:mysql://127.0.0.1:3306/",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20000"
+				},
+				"auth-model": "native"
 			}
 		}
 	},

@@ -1,0 +1,1 @@
+db.atlas_structured.find({recognitionCode:'3786586573hqbwaxxy'}).limit(1);
