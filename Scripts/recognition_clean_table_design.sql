@@ -11,13 +11,13 @@ create table asgard_demeter.dem_recognition_data_cleaning_task
 );
 
 create index idx_group_code
-    on asgard_demeter.dem_repeat_report_task (group_code);
+    on asgard_demeter.dem_recognition_data_cleaning_task (group_code);
 
 create index idx_task_code
-    on asgard_demeter.dem_repeat_report_task (task_code);
+    on asgard_demeter.dem_recognition_data_cleaning_task (task_code);
 
 create index idx_update_time
-    on asgard_demeter.dem_repeat_report_task (update_time);
+    on asgard_demeter.dem_recognition_data_cleaning_task (update_time);
 
 
 create table asgard_demeter.dem_recognition_data_cleaning_task_detail
@@ -35,10 +35,10 @@ create table asgard_demeter.dem_recognition_data_cleaning_task_detail
 );
 
 create index idx_group_code
-    on asgard_demeter.dem_repeat_report_task (group_code);
+    on asgard_demeter.dem_recognition_data_cleaning_task_detail (group_code);
 
 create index idx_task_code
-    on asgard_demeter.dem_repeat_report_task (task_code);
+    on asgard_demeter.dem_recognition_data_cleaning_task_detail (task_code);
 
 create index idx_update_time
-    on asgard_demeter.dem_repeat_report_task (update_time);
+    on asgard_demeter.dem_recognition_data_cleaning_task_detail (update_time);
